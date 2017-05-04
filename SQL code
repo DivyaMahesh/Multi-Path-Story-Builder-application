@@ -1,0 +1,8 @@
+CREATE TABLE `sentence` (
+  `SentenceID` int(11) NOT NULL AUTO_INCREMENT,
+  `SentenceCont` varchar(50) NOT NULL,
+  `SentenceLocation` char(1) NOT NULL,
+  `SentenceParent` int(11) NOT NULL,
+  `TimeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`SentenceID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
